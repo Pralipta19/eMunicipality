@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+    <!DOCTYPE tiles-definitions PUBLIC
+           "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+           "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<!-- Templates Start -->
+	<!-- Layout Configuration For Default Index Page -->
+	<definition name="layout.default" template="/WEB-INF/views/layout/defaultLayout.jsp">
+		<put-attribute name="title" value="Citizen Service Portal" />
+		<put-attribute name="header" value="" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="" />
+	</definition>
+	<!-- Layout Configuration For Dashboard Pages After Login -->
+	<definition name="layout.dashboard" template="/WEB-INF/views/layout/dashboardLayout.jsp">
+		<put-attribute name="title" value="Citizen Service Portal" />
+		<put-attribute name="header"
+			value="/WEB-INF/views/layout/dashboardHeader.jsp" />
+		<put-attribute name="leftmenu"
+			value="/WEB-INF/views/layout/dashboardLeftMenu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/layout/dashboardFooter.jsp" />
+	</definition>
+	<!-- Layout Configuration For Application Pages Without Login -->
+	<definition name="layout.blank" template="/WEB-INF/views/layout/blankLayout.jsp">
+		<put-attribute name="title" value="Citizen Service Portal" />
+		<put-attribute name="header"
+			value="/WEB-INF/views/layout/blankHeader.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/layout/blankFooter.jsp" />
+	</definition> 
+	<!-- Templates End -->
+
+	<!-- Pages Start -->
+	<definition name="site.index" extends="layout.default">
+		<put-attribute name="body" value="/WEB-INF/views/index.jsp" />
+	</definition>
+	<definition name="site.dashBoard" extends="layout.dashboard">
+		<put-attribute name="body" value="/WEB-INF/views/dashBoard.jsp" /> 
+	</definition> 
+	<definition name="site.createRole" extends="layout.dashboard">
+		<put-attribute name="body" value="/WEB-INF/views/admin/createRole.jsp" /> 
+	</definition> 
+	<definition name="site.manageRole" extends="layout.dashboard">
+		<put-attribute name="body" value="/WEB-INF/views/admin/manageRole.jsp" /> 
+	</definition> 
+	<definition name="site.createUser" extends="layout.dashboard">
+		<put-attribute name="body" value="/WEB-INF/views/admin/createUser.jsp" /> 
+	</definition> 
+	<definition name="site.manageUser" extends="layout.dashboard">
+		<put-attribute name="body" value="/WEB-INF/views/admin/manageUser.jsp" /> 
+	</definition> 
+	<definition name="site.changePassword" extends="layout.dashboard">
+		<put-attribute name="body" value="/WEB-INF/views/user/changePassword.jsp" /> 
+	</definition>
+	<definition name="site.editProfile" extends="layout.dashboard">
+		<put-attribute name="body" value="/WEB-INF/views/user/editProfile.jsp" /> 
+	</definition> 
+	<definition name="site.forgotPassword" extends="layout.blank">
+		<put-attribute name="body" value="/WEB-INF/views/user/forgotPassword.jsp" /> 
+	</definition> 
+	<definition name="site.submitOtp" extends="layout.blank">
+		<put-attribute name="body" value="/WEB-INF/views/user/submitOtp.jsp" /> 
+	</definition> 
+	<definition name="site.changePasswordForForgotCase" extends="layout.blank">
+		<put-attribute name="body" value="/WEB-INF/views/user/changePasswordForForgotCase.jsp" /> 
+	</definition>
+	<definition name="site.showbirthapplicationform" extends="layout.dashboard">
+		<put-attribute name="body" value="/WEB-INF/views/user/birthCertificateForm.jsp" /> 
+	</definition> 
+	<definition name="site.showdeathapplicationform" extends="layout.dashboard">
+		<put-attribute name="body" value="/WEB-INF/views/user/deathCertificateForm.jsp" /> 
+	</definition> 
+	<definition name="site.showmarriageapplicationform" extends="layout.dashboard">
+		<put-attribute name="body" value="/WEB-INF/views/user/marriageCertificateForm.jsp" /> 
+	</definition> 
+	<definition name="site.showapplicationStatusForm" extends="layout.dashboard">
+		<put-attribute name="body" value="/WEB-INF/views/user/applicationStatusForm.jsp" /> 
+	</definition> 
+	<definition name="site.approveBrithCertificate" extends="layout.dashboard">
+		<put-attribute name="body" value="/WEB-INF/views/authority/approveBirthCertificateForm.jsp" /> 
+	</definition> 
+	<definition name="site.approveDeathCertificate" extends="layout.dashboard">
+		<put-attribute name="body" value="/WEB-INF/views/authority/approveDeathCertificateForm.jsp" /> 
+	</definition> 
+	
+	<!-- Pages End -->
+	
+</tiles-definitions> 
+    

@@ -1,0 +1,262 @@
+/*+++++++++++++++++++++
+=====================================
+ Company Name : Aashdit Technologies LLP
+ Author Name :Biswajit pani
+ Version : 1.1
+===============================
++++++++++++++++++++*/
+
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: "Sans-Serif", Arial;
+	
+}
+/* .header{
+	border:1px solid #333;
+} */
+
+.print-area {
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.pri_header {
+	border: 1px solid #333;
+	padding: 0px;
+	margin-bottom: 5px
+}
+
+.logo-sec {
+	float: left
+}
+
+.logo {
+	height: 60px;
+	margin-left: 2px;
+	padding: 5px;
+}
+
+.heading-sec {
+	float: left;
+	padding-top: 25px;
+}
+
+.heading-sec-app {
+	width: 35%;
+}
+
+.heading-sec-con {
+	width: 39%;
+}
+
+.heading-sec h1 {
+	margin: 0px;
+	font-size: 15.5px;
+	font-weight: bold;
+}
+
+.heading-sec h4 {
+	font-size: 15px;
+	margin: 5px 0px;
+}
+
+.heading-sec h5 {
+	font-size: 13px;
+	margin: 5px 0px;
+}
+
+.barcode-sec {
+	width: 15%;
+	float: right;
+	padding-top: 14px;
+	margin-right: 24px;
+}
+
+.barcode-sec img {
+	height: 25px;
+}
+
+.barcode-sec h5 {
+	margin: 0px;
+	letter-spacing: .74em;
+	margin-top: 2px;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.info-secs {
+	border: 1px solid #333;
+	margin-bottom: 5px;
+	font-weight: 500;
+}
+
+.head-width {
+	float: left;
+	width: auto;
+	margin: 38px 0 0 0;
+}
+
+.info-secs table {
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 0px !important;
+}
+
+.info-secs table>tbody>tr>th, .info-secs table>tbody>tr>td, .info-secs table>thead>tr>td, .info-secs table>thead>tr>th
+	{
+	border: 0px solid #ddd;
+}
+
+.info-secs table>tbody>tr>td, .info-secs table>tbody>tr>th, .info-secs table>tfoot>tr>td, .info-secs table>tfoot>tr>th,
+	.info-secs table>thead>tr>td, .info-secs table>thead>tr>th {
+	padding: 4px 0px 4px 5px;
+	line-height: 1.2;
+	font-size: 15px;
+	vertical-align: middle;
+}
+
+.info-secs table tr th {
+	background-color: #eee;
+	padding: 6px !important;
+	border-bottom: 1px solid #000 !important;
+	font-size: 14px !important
+}
+
+.info-secs table tr th.deepbg, .deepbg {
+	background-color: #696868;
+	color: #fff;
+	-webkit-print-color-adjust: exact;
+	color-adjust: exact;
+}
+
+.info-secs table label {
+	margin-bottom: 0px;
+	font-weight: 600
+}
+
+.info-secs table .fa {
+	margin-right: 3px;
+}
+
+.info-secs .border-top {
+	border-top: 1px solid #000 !important;
+}
+
+.info-secs .border-table>tbody>tr>th, .border-table>tbody>tr>td, .border-table>thead>tr>td,
+	.border-table>thead>tr>th {
+	border: 1px solid #000 !important;
+}
+
+.info-secs .table-bordered>tbody>tr>th, .info-secs .table-bordered>tbody>tr>td,
+	.info-secs .table-bordered>thead>tr>td, .info-secs .table-bordered>thead>tr>th {
+	border: 1px solid #000 !important;
+}
+
+.margin-top20 {
+	margin-top: 20px;
+}
+
+.info-secs .border-table {
+	margin: 0px;
+	width: 100%
+}
+
+#printbtn {
+	margin-top: 10px
+}
+
+.input-div {
+	height: 20px;
+	border: 1px solid #000;
+}
+
+.upload-img {
+	height: 164px;
+	padding: 0px;
+	max-width: 100%;
+}
+
+.info-secs p {
+	text-indent: 50px;
+	font-size: 16px !important;
+	line-height: 24px !important;
+	padding-top: 20px
+}
+
+.passportsize {
+	width: 100%;
+	height: inherit;
+	max-height: 180px;
+}
+
+.infosec_1 {
+	text-indent: 37px;
+}
+
+.cus-div-with-indent {
+	margin-left: 40px;
+	text-indent: 0;
+	margin-bottom: 3px;
+}
+
+.cus-div-with-indent i.fa {
+	font-size: 11px;
+}
+
+.cus-seal-name-span {
+	float: right;
+	margin-right: 51px;
+	margin-top: 21px;
+}
+
+
+.cus-seal-deg-span {
+	float: right;
+	margin-right: 41px;
+}
+@page {size:landscape}
+
+@media print(@page {size:landscape}) {
+.header{
+	border:1px solid #333;
+}
+	body{
+	writing-mode: tb-rl;
+	} 
+ @page { 
+        size: landscape;
+    }
+	.pagebreak {
+		page-break-after: always;
+	}
+	.info-secs table tr th.deepbg, .deepbg {
+		background-color: #000 !important;
+		color: #fff;
+		-webkit-print-color-adjust: exact;
+		color-adjust: exact;
+	}
+	.passportsize {
+		width: 100%;
+		height: auto;
+		max-height: 125px;
+	}
+	.upload-img {
+		height: 164px;
+		padding: 0px;
+		max-width: 100%;
+	}
+	.noPrintImage {
+		display: none;
+	}
+	.info-secs table tr th.deepbg, .deepbg {
+		background-color: #000 !important;
+		color: #fff !important;
+		-webkit-print-color-adjust: exact;
+		color-adjust: exact;
+	}
+	.table-k {
+		width: 99%;
+	}
+	
+}
